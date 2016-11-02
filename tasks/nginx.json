@@ -1,0 +1,13 @@
+[
+  {
+    "name": "nginx",
+    "image" : "nginx:latest",
+    "memory" : 64,
+    "portMappings" : [
+      {
+        "containerPort" : 80,
+        "hostPort" : 80
+      }
+    ]
+  }
+]
