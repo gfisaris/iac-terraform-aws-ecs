@@ -11,7 +11,7 @@ resource "aws_ecs_service" "AWS_ECS_SERVICE" {
   iam_role = "${data.terraform_remote_state.aws_iam.iamRole_ecsServiceSchedulerRole}" 
 
   load_balancer {
-    target_group_arn = "${data.terraform_remote_state.aws_ec2_alb.TargetGroup-ECS_Cluster-AWS_ECS_SERVICE_ALB-ARN}"
+    target_group_arn = "${data.terraform_remote_state.aws_ec2_alb.tgrp-AWS_EC2_ALB_TG-arn}"
     container_name = "nginx"
     container_port = "80"
   }
