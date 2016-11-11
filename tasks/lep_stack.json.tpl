@@ -144,7 +144,7 @@
     }
   },
   {
-    "name":"app-code",
+    "name":"magento-code",
     "essential":true,
     "hostname":"app-code.srv",
     "image":"DCKIMG_APPCODE_NAME:DCKIMG_APPCODE_TAG",
