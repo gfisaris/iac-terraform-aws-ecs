@@ -17,22 +17,8 @@ resource "aws_ecs_service" "lep_stack" {
   }
 }
 
-output "Service-LEP_Stack-ID" {
-  value = ["${aws_ecs_service.lep_stack.id}"]
-}
-
-output "Service-LEP_Stack-Name" {
-  value = ["${aws_ecs_service.lep_stack.name}"]
-}
-
-output "Service-LEP_Stack-Cluster" {
-  value = ["${aws_ecs_service.lep_stack.cluster}"]
-}
-
-output "Service-LEP_Stack-IamRole" {
-  value = ["${aws_ecs_service.lep_stack.iam_role}"]
-}
-
-output "Service-LEP_Stack-DesireCount" {
-  value = ["${aws_ecs_service.lep_stack.desire_count}"]
-}
+output "service_lep_stack_id"             { value = "${aws_ecs_service.lep_stack.id}" }
+output "service_lep_stack_name"           { value = "${aws_ecs_service.lep_stack.name}" }
+output "service_lep_stack_cluster"        { value = "${aws_ecs_service.lep_stack.cluster}" }
+output "service_lep_stack_iamRole"        { value = "${aws_ecs_service.lep_stack.iam_role}" }
+output "service_lep_stack_desired_count"  { value = "${aws_ecs_service.lep_stack.desired_count}" }
